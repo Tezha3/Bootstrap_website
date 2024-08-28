@@ -6,6 +6,8 @@
     <title>COOK IT</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         .carousel-item img {
             object-fit: cover;
@@ -37,6 +39,19 @@
             background-color: #0056b3; /* Darker shade for button hover */
             border-color: #004085;
         }
+        .heading-block {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: #f8f9fa;
+        }
+        .heading-block h5 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -104,13 +119,20 @@
         <div class="col-md-12">
             <form class="form-inline">
                 <div class="form-group mx-sm-3 mb-2">
-<input type="text" class="form-control" id="searchInput" placeholder="Enter Recipe Title">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Enter Recipe Title">
                 </div>
                 <button type="submit" class="btn btn-warning mb-2">Search</button>
             </form>
         </div>
     </div>
-<div id="Recipes" class="container my-5">
+    <!-- Heading -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="heading-block">
+<h5>Breakfasts</h5>
+            </div>         </div>
+    </div>
+    <!-- Recipe Cards -->
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -118,7 +140,7 @@
                 <div class="card-body">
                     <h5 class="card-title">IDLY</h5>
                     <p class="card-text">The cakes are made by steaming a batter consisting of fermented black lentils and rice.</p>
-<a href="#" class="btn btn-warning">View Recipe</a>
+                    <a href="#" class="btn btn-warning">View Recipe</a>
                 </div>
             </div>
         </div>
@@ -128,28 +150,70 @@
                 <div class="card-body">
                     <h5 class="card-title">Dosa</h5>
                     <p class="card-text">A dosa is a thin, savoury crepe in South Indian cuisine made from a fermented batter of ground black gram and rice.</p>
-<a href="#" class="btn btn-warning">View Recipe</a>
+                    <a href="#" class="btn btn-warning">View Recipe</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4 mb-4">
             <div class="card">
-                <img src="biryani.jpg" class="card-img-top" alt="Recipe Card 3">
+<img src="chapathi.jpg" class="card-img-top" alt="Recipe Card 3">
                 <div class="card-body">
-                    <h5 class="card-title">Biryani</h5>
-                    <p class="card-text">Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat, and spices.</p>
-<a href="#" class="btn btn-warning">View Recipe</a>
+<h5 class="card-title">Chapati</h5>
+<p class="card-text">Chapati, also known as roti, is an unleavened flatbread originating from the Indian subcontinent.</p>
+                    <a href="#" class="btn btn-warning">View Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Heading -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="heading-block">
+                <h5>Desserts</h5>
+            </div>       </div>
+    </div>
+    <!-- Recipe Cards -->
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+<img src="brownie.jpg" class="card-img-top" alt="Recipe Card 1">
+                <div class="card-body">
+<h5 class="card-title">Brownie</h5>
+<p class="card-text">A chocolate brownie, or simply a brownie, is a chocolate baked confection. Brownies come in a variety of forms.</p>
+                    <a href="#" class="btn btn-warning">View Recipe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+<img src="cupcake.jpg" class="card-img-top" alt="Recipe Card 2">
+                <div class="card-body">
+<h5 class="card-title">Cupcake</h5>
+<p class="card-text">A cupcake, fairy cake, or bun is a small cake designed to serve one person, which may be baked in a small thin paper.</p>
+                    <a href="#" class="btn btn-warning">View Recipe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+<img src="ice cream.jpg" class="card-img-top" alt="Recipe Card 3">
+                <div class="card-body">
+<h5 class="card-title">Ice Cream</h5>
+<p class="card-text">You can make delicious homemade ice cream without any special gadget or crazy ingredients.</p>
+                    <a href="#" class="btn btn-warning">View Recipe</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <footer id="contact" class="bg-light py-4">
     <div class="container text-center">
         <p class="mb-0">&copy; 2024 Cook It. All rights reserved.</p>
         <div class="footer-contact mt-3">
             <p>Email: <a href="mailto:info@cookit.com">info@cookit.com</a></p>
-<p>Phone: +91 1234567890</p>
+            <p>Phone: +91 1234567890</p>
             <p>Follow us on 
                 <a href="#">Facebook</a>, 
                 <a href="#">Twitter</a>, 
